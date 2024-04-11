@@ -1,0 +1,34 @@
+.filter{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+.filter-title{
+    margin-bottom: 1em;
+}
+.filter-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+}
+.filter-input{
+    border: none;
+    border: 1px solid rgba(76, 69, 69, 0.6);
+    font-size: 1.1em;
+    width: 100%;
+    max-width: 400px;
+    padding: 0.5em;
+}
+.filter-label{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+}
+.filter-btn{
+    margin-top: 1em;
+    text-align: center;
+    position: relative;
+}

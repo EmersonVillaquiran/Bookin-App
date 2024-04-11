@@ -1,0 +1,47 @@
+.card{
+    width: 100%;
+    max-width: 250px;
+    border-radius: 0.8em;
+    overflow: hidden;
+    transition: transform 150ms ease;
+    margin-bottom: 3em; 
+    box-shadow: 0.5em 0em 1em rgba(120, 122, 126, 0.572);
+    &:hover{
+        transform: scale(1.05);
+    };
+    
+    
+}
+.card__header > img {
+    width: 100%;
+    border-radius: 0.8em 0.8em 0em 0em;
+}
+.card__section{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+.card-tittle{
+    margin-bottom: 2em;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.card-rating,.card-city, .card-price{
+    font-size: 1em;
+    font-weight: 500;
+}
+.card-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+}
+.card-btn{
+    background-color: rgb(191, 75, 75);
+    color: white;
+    border: none;
+    padding: 0.5em 1.1em;
+    border-radius: 1em;
+    font-size: 1em;
+    font-weight: 500;
+}
