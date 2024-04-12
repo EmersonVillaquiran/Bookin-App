@@ -1,0 +1,91 @@
+.form__close{
+    transform: scale(0);
+}
+.container-review{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.397);
+    backdrop-filter: blur(2px);
+    display: flex;
+    display: grid;
+    place-content: center;
+    transition: transform 150ms ease;
+}
+.review{
+    width: 100%;
+    max-width: 350px;
+    background-color: rgb(212, 212, 212);
+    padding: 2em 1.5em 2.5em;
+    border-radius: 0.8em;
+    display: grid;
+    gap: 0.7em;
+    position: relative;
+}
+.review-tittle{
+    text-align: center;
+    margin-bottom: 0.3em;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: rgba(217, 63, 63, 1);
+}
+.form__exit{
+    color: red;
+    margin-top: 0.5em;
+    position: absolute;
+    font-size: 1.4rem;
+    top: 0em;
+    right: 1.5rem;
+    cursor: pointer;
+    width: 1.5em;
+    font-weight: 700;
+}
+.form-img{
+    width: 100%;
+    max-width: 350px;
+    border-radius: 20px;  
+}
+.review-name{
+    text-align: center;
+    font-size: 1.2em;
+}
+.review-city{
+    margin-top: -2em;
+    font-weight: 300;
+    font-size: 1.1em;
+}
+.review-span{
+    margin-right: 2em;
+    font-weight: 500;
+    font-size: 1em;
+}
+.span-days{
+    font-weight: 300;
+    font-size: 1em;
+}
+.review-form{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.review-label{
+    display: flex;
+    flex-direction: column;
+}
+.review-rating{
+    width: 100%;
+    max-width: 400px;
+    border: none;
+    font-size: 1.2em;
+    margin-top: 0.5em;
+}
+.comment-text{
+    width: 100%;
+    height: 100px;
+    max-width: 400px;
+    border: none;
+    font-size: 1.2em;
+    margin-top: 0.5em;
+}

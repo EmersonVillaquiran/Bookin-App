@@ -1,3 +1,32 @@
 .reserve{
     margin-top: 2em;
 }
+
+@media (min-width: 700px) {
+    .reserve{
+        width: 100%;
+        max-width: 900px;
+        display: flex;
+        justify-content: center;
+        justify-content: center;
+    }
+
+    .reservation-img{
+        max-width: 350px;
+        margin-top: 0.5em;
+               
+    }
+    .reservation-title{
+        margin-top: 2em;
+    }
+    .reservation-section{
+        justify-content: center;
+        align-items: center;
+    }
+    .reservation-days{
+        padding: 1em;
+    }
+    .days-span{
+        font-weight: 300;
+    }
+}

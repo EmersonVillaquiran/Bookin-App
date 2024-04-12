@@ -8,18 +8,22 @@ const ReservationPages = () => {
 
   const [reserveSelected, setReserveSelected] = useState()
   const [ bookings, getBookings,,deleteBooking ] = useCrud()
+  const [formIsClose, setFormIsClose] = useState(true);
 
   useEffect(() => {
     const url = 'https://hotels-api.academlo.tech/bookings'
     getBookings(url)
   }, [])
 
+ 
 
   return (
     <section className='container-reservations'>
       <FormReviews
         reserveSelected={reserveSelected}
         setReserveSelected={setReserveSelected}
+        formIsClose={formIsClose}
+        setFormIsClose={setFormIsClose}
       />
       <h2>Reservations</h2>
       {
@@ -29,6 +33,7 @@ const ReservationPages = () => {
                 reserve={reserve}
                 setReserveSelected={setReserveSelected}
                 deleteBooking={deleteBooking}
+                setFormIsClose={setFormIsClose}
             />
         ) )
       }
