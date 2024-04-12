@@ -1,4 +1,4 @@
-import React from 'react'
+import './styles/ReserveCard.css'
 
 const ReserveCard = ({reserve, setReserveSelected, deleteBooking}) => {
 
@@ -24,23 +24,23 @@ const ReserveCard = ({reserve, setReserveSelected, deleteBooking}) => {
   
 
   return (
-    <article>
-      <header>
+    <article className='card reserve'>
+      <header className='card__header'>
         <img src={reserve.hotel.images[0].url} alt="" />
       </header>
-      <section>
-        <h3>{reserve.hotel.name}</h3>
-        <div>{reserve.hotel.city.name}, {reserve.hotel.city.country}</div>
+      <section className='card__section'>
+        <h3 className='card-tittle'>{reserve.hotel.name}</h3>
+        <div className='card-city'>{reserve.hotel.city.name}, {reserve.hotel.city.country}</div>
         <div onClick={handleReview}>Rate and comment this visit...</div>
       </section>
-      <section>
+      <section className='card__section'>
         <ul>
-          <li><span>Reservation Days</span><span> {ReservationDays}</span></li>
-          <li><span>Subtotal Price</span><span> {reserve.hotel.price*ReservationDays} USD</span></li>
+          <li className='card-city'><span>Reservation Days</span><span> {ReservationDays}</span></li>
+          <li className='card-city'><span>Subtotal Price</span><span > {reserve.hotel.price*ReservationDays} USD</span></li>
         </ul>
       </section>
-      <footer>
-        <button onClick={handleDeleteBooking}>
+      <footer className='card-footer'>
+        <button className='card-btn' onClick={handleDeleteBooking}>
           <i className='bx bx-trash'></i>
         </button>
       </footer>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './styles/UserLogged.css'
 
 
 
@@ -13,18 +14,18 @@ const UserLogged = ({user, setUser}) => {
    };
 
   return (
-    <div>
-      <header>
-        <img src={
+    <div className='logged'>
+      <header className='logged-header'>
+        <img className='logged-img' src={
             user.gender === 'female'
             ? '/female-user.png'
             : '/male-user.svg'
         } alt="" />
       </header>
-      <h2>
+      <h2 className='logged-name'>
         {user?.firstName} {user?.lastName}
       </h2>
-      <button onClick={handleLogout}>Logout</button>
+      <button className="card-btn" onClick={handleLogout}>Logout</button>
     </div>
   )
 }

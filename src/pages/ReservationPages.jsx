@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import useCrud from '../hooks/useCrud'
 import ReserveCard from '../components/ReservationsPage/ReserveCard'
 import FormReviews from '../components/ReservationsPage/FormReviews'
+import './Styles/ReservationPages.css'
 
 const ReservationPages = () => {
 
@@ -15,7 +16,7 @@ const ReservationPages = () => {
 
 
   return (
-    <section>
+    <section className='container-reservations'>
       <FormReviews
         reserveSelected={reserveSelected}
         setReserveSelected={setReserveSelected}

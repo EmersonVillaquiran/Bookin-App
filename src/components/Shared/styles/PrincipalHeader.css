@@ -4,7 +4,8 @@
     flex-direction: column;
     margin-bottom: 2em;
     box-shadow: 0.5em 0em 1em rgba(120, 122, 126, 0.572);
-    padding: 1.5em 4em;   
+    width: 100%;
+    min-width: 350px;
 }
 .header-title{
     padding: 0.5em;

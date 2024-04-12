@@ -1,6 +1,6 @@
 .card{
     width: 100%;
-    max-width: 250px;
+    max-width: 300px;
     border-radius: 0.8em;
     overflow: hidden;
     transition: transform 150ms ease;
@@ -8,9 +8,7 @@
     box-shadow: 0.5em 0em 1em rgba(120, 122, 126, 0.572);
     &:hover{
         transform: scale(1.05);
-    };
-    
-    
+    };    
 }
 .card__header > img {
     width: 100%;

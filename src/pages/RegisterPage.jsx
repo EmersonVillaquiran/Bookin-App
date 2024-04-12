@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import useAuth from "../hooks/useAuth";
+import './Styles/RegisterPage.css'
 
 const RegisterPage = () => {
 
@@ -20,35 +21,35 @@ const RegisterPage = () => {
   }
 
   return (
-    <div>
-      <form onSubmit={handleSubmit(submit)}>
-        <h2>Register</h2>
-        <label>
-          <span>First Name</span>
-          <input {...register('firstName')} type="text" />
+    <div className="form-container">
+      <form className="form"  onSubmit={handleSubmit(submit)}>
+        <h2 className="form__title">Register</h2>
+        <label className="form__label">
+          <span  className="form__field">First Name</span >
+          <input className="form__input"  {...register('firstName')} type="text" />
         </label>
         <label>
-          <span>Last Name</span>
-          <input {...register('lastName')}  type="text" />
+          <span className="form__field">Last Name</span >
+          <input className="form__input" {...register('lastName')}  type="text" />
         </label>
         <label>
-          <span>Email</span>
-          <input {...register('email')}  type="email" />
+          <span className="form__field">Email</span >
+          <input className="form__input" {...register('email')}  type="email" />
         </label>
         <label>
-          <span>Password</span>
-          <input {...register('password')}  type="password" />
+          <span className="form__field">Password</span >
+          <input className="form__input" {...register('password')}  type="password" />
         </label>
         <label>
-          <span>Gender</span>
-          <select {...register('gender')} >
+          <span className="form__field">Gender</span >
+          <select className="form__input"  {...register('gender')} >
             <option value='unknown'>Unknown</option>
             <option value='male'>Male</option>
             <option value='female'>Female</option>
             <option value='other'>I prefer don't say it</option>
           </select>
         </label>
-        <button>Submit</button>
+        <button className="card-btn">Submit</button>
       </form>
     </div>
   );

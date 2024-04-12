@@ -1,0 +1,51 @@
+.container__hotel{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hotel-slider{
+    text-align: center;
+}
+.hotel-name{
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 700;
+}
+.hotel-rating{
+    font-size: 0.9em;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 4em;
+}
+.hotel-img{
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 2em;
+}
+
+.hotel-info{
+    text-align: center;
+}
+.info-city{
+    margin-top: 1.5em;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+.info-address{
+    font-size: 1em;
+    font-weight: 200;
+    margin-bottom: 1em;
+}
+.info-description{
+    text-align: justify;
+    padding: 1em;
+}
+@media (min-width: 700px) 
+    { .hotel-slider
+    {   width: 100%; 
+        display: flex; 
+        gap: 3em; 
+        justify-content: center; }
+     }

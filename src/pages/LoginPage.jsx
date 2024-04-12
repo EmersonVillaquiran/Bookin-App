@@ -23,17 +23,18 @@ const LoginPage = () => {
   }
 
   return (
-    <div>
-      <form onSubmit={handleSubmit(submit)}>
-        <label>
-          <span>Email</span>
-          <input {...register('email')} type="email" />
+    <div className="form-container">
+      <form className="form" onSubmit={handleSubmit(submit)}>
+        <h2 className="form__title">User</h2>
+        <label className="form__label">
+          <span className="form__field">Email</span>
+          <input className="form__input"{...register('email')} type="email" />
         </label>
-        <label>
-          <span>Password</span>
-          <input {...register('password')} type="password" />
+        <label className="form__label">
+          <span className="form__field">Password</span>
+          <input className="form__input" {...register('password')} type="password" />
         </label>
-        <button>Submit</button>
+        <button className="card-btn"> Submit</button>
       </form>
     </div>
   );

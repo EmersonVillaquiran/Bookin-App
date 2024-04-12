@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import useCrud from "../../hooks/useCrud";
+import './styles/FormReserve.css'
 
 const FormReserve = ({hotelId}) => {
 
@@ -15,18 +16,18 @@ const FormReserve = ({hotelId}) => {
  }
 
   return (
-    <section>
-      <h3>Do you want to reserve this hotel?</h3>
-      <form onSubmit={handleSubmit(submit)}>
-        <label>
-          <span>Check-in</span>
-          <input {...register('checkIn')} type="date"/>
+    <section className="reservations">
+      <h3 className="reservations-title">Reservations</h3>
+      <form className="reservations-form" onSubmit={handleSubmit(submit)}>
+        <label className="filter-label reservations-label">
+          <span className="filter-span reservations-span">Check-in</span>
+          <input className="filter-input reservations-input" {...register('checkIn')} type="date"/>
         </label>
-        <label>
-          <span>Check-out</span>
-          <input {...register('checkOut')} type="date"/>
+        <label className="filter-label reservations-label">
+          <span className="filter-span reservations-span">Check-out</span>
+          <input className="filter-input reservations-input " {...register('checkOut')} type="date"/>
         </label>
-        <button>Submit</button>
+        <button className='card-btn reservation-btn'>Submit</button>
       </form>
     </section>
   );

@@ -1,16 +1,12 @@
 .container-card{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5em;
-    padding-bottom: 4em;
-    max-width: calc(100% - 4em);
     align-items: center;
-    margin-left: 3em;
+    gap: 1.5em;
     margin-top: 1em;
     gap: 4em;
-    margin-left: 5em;
-    margin-right: 5em;
 }
 
 .container__form{

@@ -4,6 +4,7 @@ import useFetch from '../hooks/useFetch'
 import { Map, Marker } from 'pigeon-maps'
 import OtherHotels from '../components/HotelsIDPage/OtherHotels'
 import FormReserve from '../components/HotelsIDPage/FormReserve'
+import './Styles/HotelsIdPage.css'
 
 const HotelsIdPage = () => {
 
@@ -20,14 +21,16 @@ const HotelsIdPage = () => {
   
 
   return (
-    <div>
-      <h2>{hotel?.name}</h2>
-      <h3>Rating: {hotel?.rating} </h3>
-      <div className="slider">
-        <img src={hotel?.images[0].url} alt="" />
+    <div className='container__hotel'>
+        <h2 className='hotel-name'>{hotel?.name}</h2>
+        <h3 className='hotel-rating'>Rating: {hotel?.rating} 
+        </h3>
+      <div className="hotel-slider">
+        <img className='hotel-img' src={hotel?.images[0].url} alt="" />
         {hotel && (
           <Map
-            height={200}
+            height={235}
+            width={350}
             defaultCenter={[+hotel?.lat, +hotel?.lon]}
             maxZoom={16}
             minZoom={10}
@@ -36,16 +39,16 @@ const HotelsIdPage = () => {
           </Map>
         )}
       </div>
-      <section>
-        <h3>
+      <section className='hotel-info'>
+        <h3 className='info-city'>
           {hotel?.city.name}, {hotel?.city.country}.
         </h3>
-        <p>
+        <p className='info-address'>
           <i className="bx bx-map">
           {hotel?.address}
           </i>
         </p>
-        <p>{hotel?.description}</p>
+        <p className='info-description'>{hotel?.description}</p>
       </section>
       {
         localStorage.getItem('token')

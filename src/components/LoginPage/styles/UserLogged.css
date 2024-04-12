@@ -1,0 +1,16 @@
+.logged{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logged-img{
+    width: 100%;
+    max-width: 350px;
+}
+.logged-name{
+    font-size: 1.5em;
+    margin: 1em;
+    font-weight: 400;
+}

@@ -26,7 +26,7 @@ const FormReviews = ({ reserveSelected, setReserveSelected }) => {
         </header>
         <h4>{reserveSelected?.hotel.name}</h4>
         <p>
-          {reserveSelected?.hotel.city.name},{" "}
+          {reserveSelected?.hotel.city.name}{" "}
           {reserveSelected?.hotel.city.country}
         </p>
         <ul>

@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import useFetch from "../../hooks/useFetch"
 import HotelCard from "../HomePage/HotelCard"
+import './styles/OtherHotels.css'
 
 const OtherHotels = ({hotel}) => {
 
@@ -16,9 +17,9 @@ const OtherHotels = ({hotel}) => {
     console.log(hotel, hotelsInCity);
 
   return (
-   <section>
-        <h3>Other hotels in <span>{hotel?.city.name}</span></h3>
-        <div>
+   <section className="others">
+        <h3 className="others-title">Other hotels in <span className="others-span">{hotel?.city.name}</span></h3>
+        <div className="other-container">
             {
                 hotelsInCity?.filter(hotelInfo => hotelInfo.id !== hotel.id).map(hotelInfo => (
                     <HotelCard
