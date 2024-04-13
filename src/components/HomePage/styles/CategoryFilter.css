@@ -1,14 +1,21 @@
 .filter-cities{
     width: 100%;
-    max-width: 400px;
-    margin: 1.5em;
-    padding: 1.5em;
-    margin-bottom: -15em;
+    max-width: 300px; 
 }
 .cities-title{
-    text-align: center;
-    margin-bottom: 1em;
+   text-align: center;
+   margin-top: 3em;
+   font-size: 1.2em;
 }
 .cities-ul{
-    line-height: 2;
+    line-height: 3;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.cities-name{
+    font-size: 1em;
+}
+.cities-name:hover{
+    font-size: 1.2em;
 }

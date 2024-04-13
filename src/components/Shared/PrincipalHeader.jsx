@@ -4,7 +4,7 @@ import './styles/PrincipalHeader.css'
 const PrincipalHeader = () => {
   return (
     <header className="header">
-        <h1 className="header-title"><Link to='/'>Hotels <span>App</span></Link>            
+        <h1 className="header-title"><Link to='/'>Hotels <span className="header-span">App</span></Link>            
         </h1>
         <nav className="header-nav">
             <ul className="header-ul">

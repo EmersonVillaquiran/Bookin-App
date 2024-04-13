@@ -34,10 +34,10 @@ const CategoryFilter = () => {
    <section className='filter-cities'>
     <h3 className='cities-title'>Cities</h3>
     <ul className='cities-ul'>
-        <li className='cities-lis' onClick={() => handleFilterCity(cities?.id)}>All cities</li>
+        <li className='cities-li' onClick={() => handleFilterCity(cities?.id)}>All cities</li>
         {
             cities?.map(city => (
-                <li className='cities-lis' onClick={() => handleFilterCity(city.id)} key={city.id}>
+                <li className='cities-name' onClick={() => handleFilterCity(city.id)} key={city.id}>
                     {city.name}
                 </li>
             ))

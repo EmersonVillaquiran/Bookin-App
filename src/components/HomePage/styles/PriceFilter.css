@@ -5,6 +5,7 @@
     align-items: center;
 }
 .filter-title{
+    margin-top: 1em;
     margin-bottom: 1em;
 }
 .filter-form{
@@ -12,6 +13,7 @@
     flex-direction: column;
     width: 100%;
     max-width: 350px;
+    align-items: center;
 }
 .filter-input{
     border: none;
@@ -27,8 +29,14 @@
     width: 100%;
     max-width: 350px;
 }
-.filter-btn{
+.filter-span{
+    margin-left: -11em;
+    margin-bottom: 0.5em;
     margin-top: 1em;
-    text-align: center;
-    position: relative;
 }
+.filter-btn{
+
+    margin-top: 1em;
+    background-color: rgb(191, 75, 75);
+}
+

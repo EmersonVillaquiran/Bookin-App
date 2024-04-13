@@ -25,7 +25,7 @@ const PriceFilter = ({setFromTo}) => {
           <input className="filter-input" {...register('from')} type="number" />
         </label>
         <label className="filter-label">
-          <span>To</span>
+          <span className="filter-span">To</span>
           <input className="filter-input" {...register('to')} type="number" />
         </label>
         <button className="container__btn filter-btn">Apply</button>

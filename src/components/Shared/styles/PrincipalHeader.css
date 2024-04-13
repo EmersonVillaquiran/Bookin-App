@@ -7,16 +7,21 @@
     width: 100%;
     min-width: 350px;
 }
+.header-span{
+    color: rgba(217, 63, 63, 1);
+}
+a:-webkit-any-link {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;    
+}
+
 .header-title{
     padding: 0.5em;
     font-size: 3em;
     font-weight: 700;
-    text-decoration: none;
 }
-.header-title>span{
-    color: rgba(178, 33, 20, 0.572);
-    text-decoration: none;
-}
+
 .header-nav{
     display: flex;
     align-items: center;
@@ -26,8 +31,10 @@
     font-size: 1.5em;
     margin: 1em;
     font-weight: 500;
-    text-decoration: none;
     color: inherit;
+}
+.header-li:nth-child(2){
+    color: rgba(217, 63, 63, 1);
 }
 
 @media (min-width: 700px) {

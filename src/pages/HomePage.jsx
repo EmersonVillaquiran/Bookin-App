@@ -35,31 +35,33 @@ const HomePage = () => {
   }
 
   return (
-    <div>
-      <div className="container__form">
-        <input placeholder="Search your hotel..." className="container__input" onChange={handleChange} ref={inputValue} value={inputName} type="text" />
-        <button className="container__btn">
-          Search
-        </button>
-      </div>
-      <aside className="home-anside">
-        <h3>Filters</h3>
+    <div className="container">
+      <aside className="home-aside">
+        <h3 className="home-aside-filters">Filters</h3>
         <PriceFilter
           setFromTo={setFromTo}
         />
         <CategoryFilter/>
       </aside>
-      <div className="container-card">
-      {
-        hotels?.filter(cbFilter).map((hotelInfo) => (
-          <HotelCard
-            key={hotelInfo.id}
-            hotel={hotelInfo}
-          />
-        ))
-      }
+      <div className="container-wrapper">
+          <div className="container__form">
+            <input placeholder="Search your hotel..." className="container__input" onChange={handleChange} ref={inputValue} value={inputName} type="text" />
+            <button className="container__btn">
+              Search
+            </button>
+          </div>
+          <div className="container-card">
+          {
+            hotels?.filter(cbFilter).map((hotelInfo) => (
+              <HotelCard
+                key={hotelInfo.id}
+                hotel={hotelInfo}
+              />
+            ))
+          }
+          </div>
+        </div>
       </div>
-    </div>
   )
 }
 
