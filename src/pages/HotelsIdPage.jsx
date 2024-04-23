@@ -5,6 +5,7 @@ import { Map, Marker } from 'pigeon-maps'
 import OtherHotels from '../components/HotelsIDPage/OtherHotels'
 import FormReserve from '../components/HotelsIDPage/FormReserve'
 import './Styles/HotelsIdPage.css'
+import SliderImg from '../components/HotelsIDPage/SliderImg'
 
 const HotelsIdPage = () => {
 
@@ -25,8 +26,12 @@ const HotelsIdPage = () => {
         <h2 className='hotel-name'>{hotel?.name}</h2>
         <h3 className='hotel-rating'>Rating: {hotel?.rating} 
         </h3>
+        <div className='hotel-img' >
+        <SliderImg
+          hotel={hotel}
+        />
+        </div>
       <div className="hotel-slider">
-        <img className='hotel-img' src={hotel?.images[0].url} alt="" />
         {hotel && (
           <Map
             height={235}
