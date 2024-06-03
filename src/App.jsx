@@ -16,7 +16,7 @@ function App() {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    const url = 'https://hotels-api.academlo.tech/hotels'
+    const url = 'https://booking-app-backend-w5w8.onrender.com/hotels'
     dispatch(getHotelesThunk(url))
   }, [])
 

@@ -11,7 +11,7 @@ const ReservationPages = () => {
   const [formIsClose, setFormIsClose] = useState(true);
 
   useEffect(() => {
-    const url = 'https://hotels-api.academlo.tech/bookings'
+    const url = 'https://booking-app-backend-w5w8.onrender.com/bookings'
     getBookings(url)
   }, [])
 

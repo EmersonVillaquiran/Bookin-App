@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import useFetch from '../hooks/useFetch'
 import { Map, Marker } from 'pigeon-maps'
@@ -6,19 +6,29 @@ import OtherHotels from '../components/HotelsIDPage/OtherHotels'
 import FormReserve from '../components/HotelsIDPage/FormReserve'
 import './Styles/HotelsIdPage.css'
 import SliderImg from '../components/HotelsIDPage/SliderImg'
+import HotelReview from '../components/HotelsIDPage/HotelReview'
 
 const HotelsIdPage = () => {
 
   const {id} = useParams()
 
-  const url = `https://hotels-api.academlo.tech/hotels/${id}`
+  const url = `https://booking-app-backend-w5w8.onrender.com/hotels/${id}`
   const [ hotel, getHotel ] = useFetch(url)
 
   useEffect(() => {
     getHotel()
   }, [id])
 
+  // //Reviews
   
+  
+  //   const url2 = 'https://booking-app-backend-w5w8.onrender.com/reviews';
+  //   const [reviews = [],  fetchData] = useFetch(url2);
+  
+  //   useEffect(() => {
+  //     fetchData();
+  //   }, []);
+  //   console.log(reviews);
   
 
   return (
@@ -64,6 +74,17 @@ const HotelsIdPage = () => {
       <OtherHotels
         hotel={hotel}
       />
+      {/* <div>
+        <h1>Reviews</h1>
+        {
+          reviews.map(review => (
+            <HotelReview
+              key={review.id}
+              review={review}
+            />
+          ))
+        }
+      </div> */}
     </div>
   );
 }
